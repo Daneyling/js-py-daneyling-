@@ -1,5 +1,12 @@
-const numero = 5;
+const num = Math.floor(Math.random() * 100) + 1;
 
-for (let i = 1; i <= 10; i++) {
-    console.log(`${numero} * ${i} = ${numero * i}`);
+function esPrimo(n) {
+  if (n <= 1) return false;
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) return false;
+  }
+  return true;
 }
+
+console.log(`Número generado: ${num}`);
+console.log(esPrimo(num) ? `El número ${num} es primo` : `El número ${num} no es primo`);
