@@ -1,3 +1,4 @@
+console.log("ejercicio1: calculadora basica")
 // Funcion para calcular operaciones basicas
 function calcular(num1, num2, operacion) {
     switch (operacion) {
