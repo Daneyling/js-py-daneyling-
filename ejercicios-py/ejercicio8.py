@@ -1,5 +1,5 @@
-def factorial(n):
-    resultado = 1
-    for i in range(1, n + 1):
-        return resultado
-        print(factorial(5))
+numeros = [5, 10, 15, 20, 25]
+suma = sum(numeros)
+
+print(f"Array: {numeros}")
+print(f"Suma total: {suma}")

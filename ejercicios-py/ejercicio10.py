@@ -1,5 +1,8 @@
-def es_palindromo(palabra):
-    invertida = palabra[::-1]
-    return palabra == invertida
+import random
+import string
 
-print(es_palindromo("reconocer"))  # True
+longitud = random.randint(16, 40)
+caracteres = string.ascii_letters + string.digits
+contraseña = ''.join(random.choice(caracteres) for _ in range(longitud))
+
+print(f"Contraseña generada ({longitud} caracteres): {contraseña}")

@@ -1,5 +1,7 @@
-contador = 0
-for i in range(1, 101):
-    if i % 2 == 0:
-        contador += 1
-print(f"Hay {contador} números pares entre 1 y 100")
+numeros = [18, 4, 23, 7, 91, 2]
+mayor = max(numeros)
+menor = min(numeros)
+
+print(f"Array: {numeros}")
+print(f"Mayor: {mayor}")
+print(f"Menor: {menor}")
